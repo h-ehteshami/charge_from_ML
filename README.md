@@ -8,13 +8,13 @@ This repository contains the code and dataset to train a convolutional neural ne
 We used two models for charge density prediction. 
 
 #### CNN
-A UNet architecture with some modifications has been trained to learn the final density $\rho$ from the initial density $\rho_0$. The effect of using the local potential $v_{loc}$ as an input feature has also been studied. 
+A UNet architecture with some modifications has been trained to learn the final density $\rho$ from the initial density $\rho_0$. The effect of using the local potential $v_{local}$ as an input feature has also been studied. 
 
 #### SOAP-based
 Features have been calculated using SOAP as implemented in the [DScribe](https://singroup.github.io/dscribe/latest/index.html). A NN is then used to learn the density map. Please take a look at the notebooks for details.
 
 #### Dataset
-The dataset for **MgO** and **Cu** was produced using CASTEP by outputting the input and output density. A sample of the dataset is available in this repository. However, you can download the full dataset from [the Google Drive]( www.google.com).
+The dataset for **MgO** and **Cu** was produced using CASTEP by outputting the input and output density. A sample of the dataset is available in this repository. However, you can download the full dataset from [the Google Drive](https://drive.google.com/drive/folders/1sd8rws4JZHwWbvh2vDvz9e7_k3SJLKDx?usp=drive_link).
 
 #### Reproducing the results
 You can create a Python environment using
