@@ -1,7 +1,7 @@
 numpy>=1.2.1
 torch==2.5.1
-sklearn==1.6.1
-skimage==0.25.0
+scikit-learn==1.6.1
+scikit-image==0.25.0
 plotly==6.0.1
 matplotlib==3.10.0
 ase==3.25.0
