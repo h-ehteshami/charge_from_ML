@@ -14,7 +14,7 @@ A UNet architecture with some modifications has been trained to learn the final 
 Features have been calculated using SOAP as implemented in the [DScribe](https://singroup.github.io/dscribe/latest/index.html). A NN is then used to learn the density map. Please take a look at the notebooks for details.
 
 #### Dataset
-The dataset for ==MgO== and ==Cu== was produced using CASTEP by outputting the input and output density. A sample of the dataset is available in this repository. However, you can download the full dataset from [the Google Drive]( www.google.com).
+The dataset for **MgO** and **Cu** was produced using CASTEP by outputting the input and output density. A sample of the dataset is available in this repository. However, you can download the full dataset from [the Google Drive]( www.google.com).
 
 #### Reproducing the results
 You can create a Python environment using
