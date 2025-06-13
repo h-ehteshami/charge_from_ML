@@ -10,7 +10,7 @@ We used two models for charge density prediction.
 #### CNN
 A UNet architecture with some modifications has been trained to learn the final density $\rho$ from the initial density $\rho_0$. The effect of using the local potential $v_{loc}$ as an input feature has also been studied. 
 
-#### SOAP based
+#### SOAP-based
 Features have been calculated using SOAP as implemented in the [DScribe](https://singroup.github.io/dscribe/latest/index.html). A NN is then used to learn the density map. Please take a look at the notebooks for details.
 
 #### Dataset
