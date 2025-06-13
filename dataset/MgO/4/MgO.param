@@ -1,0 +1,49 @@
+comment = Bulk MgO - density output 
+
+task = singlepoint
+!rand_seed 654321
+
+cut_off_energy = 300 eV
+!basis_precision extreme
+finite_basis_corr = 0
+fix_occupancy = false
+backup_interval = 0
+calculate_stress = true
+xc_functional = pbe
+metals_method dm
+grid_scale : 2.0
+
+write_checkpoint none
+write_bib false
+!opt_strategy_bias +3
+!page_wvfns 0
+smearing_scheme gaussian
+spin_polarized false 
+popn_calculate  = false
+
+!======= Writing output ======!
+
+!WRITE_FORMATTED_DENSITY = TRUE
+!WRITE_FORMATTED_POTENTIAL = TRUE
+
+!======= SCF Params =======!
+iprint = 1
+mixing_scheme = pulay
+elec_energy_tol = 1.0e-8
+max_scf_cycles = 1000
+
+!max_scf_cycles =  1000
+!mix_history_length =  30
+!mix_charge_amp =  0.8
+!mix_charge_gmax =  1.5
+!mix_spin_amp =  2.0
+!mix_spin_gmax =  1.5
+!mix_metric_q =  -1
+!mix_cutoff_energy
+
+%block devel_code
+no_improve_wvfn
+DEN_FROM_WVFN
+NOISY_INIT_DEN
+%endblock devel_code
+

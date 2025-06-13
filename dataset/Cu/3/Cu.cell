@@ -1,0 +1,19 @@
+%BLOCK LATTICE_CART
+ANG
+3.6  0.0  0.0
+0.0  3.6  0.0
+0.0  0.0  3.6
+%ENDBLOCK LATTICE_CART
+
+%BLOCK POSITIONS_ABS
+ Cu  0.0   0.0   0.0
+ Cu  0.0   1.8   1.8
+ Cu  1.8   0.0   1.8
+ Cu  1.8   1.8   0.0
+%ENDBLOCK POSITIONS_ABS
+
+%block species_pot
+NCP
+%endblock species_pot
+
+kpoint_mp_grid 8 8 8
